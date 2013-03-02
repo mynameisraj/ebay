@@ -103,7 +103,7 @@ body {
 	text-decoration: underline;
 }
 
-.outfit > div {
+.item {
 	background-color: #fff;
 	border: 1px solid rgb(200,200,200);
 	border-radius: 4px;
@@ -127,7 +127,7 @@ body {
 	max-height: 300px;
 }
 
-.outfit > div h2 {
+.item h2 {
 	background-image: 
 		-webkit-linear-gradient(
 			-90deg,
@@ -146,6 +146,10 @@ body {
 	z-index: 3;
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+}
+
+.item h2 a {
+	color: rgb(78, 109, 183);
 }
 
 .loading {
