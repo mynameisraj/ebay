@@ -7,6 +7,9 @@ var init = function() {
 }
 
 var refresh = function() {
+	var loading = document.getElementsByClassName("loading")[0];
+	loading.style["display"] = "inline-block";
+
 	var req = new XMLHttpRequest();
 	var top = document.getElementsByClassName("top-img")[0];
 	var bottom = document.getElementsByClassName("bottom-img")[0];
@@ -24,6 +27,7 @@ var refresh = function() {
 		shoes.getElementsByTagName("img")[0].setAttribute("src", r.shoe.src);
 		accessory.getElementsByTagName("a")[0].setAttribute("href", r.accessory.link);
 		accessory.getElementsByTagName("img")[0].setAttribute("src", r.accessory.src);
+		loading.style["display"] = "none";
 	};
 	req.open("get", "/test", true);
 	req.send("mens");
