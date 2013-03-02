@@ -30,7 +30,7 @@ var refresh = function() {
 		loading.style["display"] = "none";
 	};
 	req.open("get", "/test", true);
-	req.send("mens");
+	req.send();
 }
 
 window.addEventListener("load", init, false);
