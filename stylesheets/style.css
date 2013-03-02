@@ -53,3 +53,71 @@ table {
 }
 
 /* @end */
+
+body {
+	background-color: #eee;
+	color: #333;
+	font: 12px/18px "Lucida Grande", Helvetica, sans-serif;
+}
+
+.container {
+	width: 600px;
+	margin: 40px auto;
+}
+
+.title {
+	margin: 0 0 40px;
+}
+
+.title h1 {
+	float: left;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 24px;
+}
+
+.title .refresh {
+	float: right;
+}
+
+.refresh a {
+	-webkit-transition: 0.1s linear background-color;
+	background-color: rgb(68, 210, 125);
+	border-radius: 4px;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 12px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.refresh a:hover {
+	background-color: rgb(51, 194, 108);
+	text-decoration: underline;
+}
+
+.outfit > div {
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	margin-bottom: 20px;
+}
+
+.img {
+	background-color: #fff;
+	border-radius: 4px 4px 0 0;
+	height: 200px;
+	overflow: hidden;
+}
+
+.img img {
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+}
+
+.outfit > div h2 {
+	font-size: 16px;
+	font-weight: 500;
+	padding: 10px;
+	text-align: center;
+}
