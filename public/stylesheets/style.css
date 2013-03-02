@@ -78,9 +78,9 @@ body {
 	text-shadow: 0 1px 0 rgba(255,255,255,0.6);
 }
 
-.gender, .title .refresh {
+.url, .gender, .title .refresh {
 	float: left;
-	margin-left: 100px;
+	margin-left: 20px;
 }
 
 .refresh a {
