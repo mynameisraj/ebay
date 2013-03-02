@@ -29,7 +29,10 @@ var refresh = function() {
 		accessory.getElementsByTagName("img")[0].setAttribute("src", r.accessory.src);
 		loading.style["display"] = "none";
 	};
-	req.open("get", "/test", true);
+	var gender = document.getElementsByClassName("gender-sel")[0].value;
+	var url = "/test?gender=" + gender;
+	console.log(url);
+	req.open("get", url, true);
 	req.send();
 }
 

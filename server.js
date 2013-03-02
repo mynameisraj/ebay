@@ -4,11 +4,13 @@ var querystring = require('querystring');
 var express = require('express');
 var app = express();
 app.use(express.static(__dirname + '/public'));
+app.use(express.bodyParser());
 
 app.get('/test', function (req, res) {
 	res.setHeader('Content-Type', 'application/json');
 	
 	var gender = "mens";
+	if (req.query.gender) gender = req.query.gender;
 	
 	var query = {
 		query: "",
