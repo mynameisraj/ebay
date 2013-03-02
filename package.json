@@ -1,0 +1,22 @@
+{
+  "author": "",
+  "name": "ebay",
+  "description": "ebay test",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mynameisraj/ebay.git"
+  },
+  "main": "server.js",
+  "dependencies": {
+	  "querystring":"latest",
+	  "svpply":"latest",
+	  "oauth":"latest",
+	  "express":"latest"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
