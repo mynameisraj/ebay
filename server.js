@@ -1,33 +1,34 @@
-var svpply = require('svpply');  // require the svpply library
+var svpply = require('svpply');  // require the svpply library 
 var api = new svpply.API('0ac471594da6692fdaf6a0dac1b44cf4', '6c17ab78bb1a78514f8b6d503e219190');  // setup svpply object
-var querystring = require('querystring');
-var express = require('express');
-var app = express();
-app.use(express.static(__dirname + '/public'));
-app.use(express.bodyParser());
+var querystring = require('querystring'); 
+var express = require('express'); 
+var app = express(); 
+app.use(express.static(__dirname + '/public')); 
+app.use(express.bodyParser()); 
 
+/*comment*/
 // refresh all
-app.get('/refresh', function (req, res) {
-	console.log("refreshing");
+app.get('/refresh', function (req, res) { 
+	console.log("refreshing"); 
 	
-	res.setHeader('Content-Type', 'application/json');
-	var gender = "mens";
-	if (req.query.gender) gender = req.query.gender;
-	var query = {
-		query: "",
+	res.setHeader('Content-Type', 'application/json'); 
+	var gender = "mens"; 
+	if (req.query.gender) gender = req.query.gender; 
+	var query = { 
+		query: "",  
 		sort_by: "trending_score",
 	};
-	var finalres = {
-		top: {
+	var finalres = { 
+		top: { 
 			link: "",
 			src: "",
 			id: ""
-		},
+		}, 
 		bottom: {
 			link: "",
 			src: "",
 			id: ""
-		},
+		}, 
 		shoe: {
 			link: "",
 			src: "",
